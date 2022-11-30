@@ -81,7 +81,7 @@ body {
    position: absolute;
    z-index: 1;
    width: 100%;
-	height: 627px;
+	height: 100%;
 }
 .snow img{
    width: 100%;
@@ -483,6 +483,7 @@ body {
 /*---Token------------------------------------------------*/
 .token {
    position: relative;
+   z-index: 5;
 }
 .token__body {
    padding-top: 140px;
@@ -586,9 +587,37 @@ body {
    padding-top: 70px;
    padding-bottom: 70px;
    position: relative;
-   z-index: 2;
+   z-index: 3;
    width: 100%;
-   color: rgb(32, 210, 255);
+}
+.aboutus__bg{
+   position: absolute;
+	width: 100%;
+   height: 100%;
+	top: 0;
+   opacity: 0.8;
+   background-color: rgb(2, 56, 11);
+	left: 0;
+	object-fit: cover;
+
+}
+.aboutus__bg::before{
+   position: absolute;
+   z-index: 5;
+   content: "";
+   top: 0;
+   width: 100%;
+   height: 15px;
+   background-color: #000;
+}
+.aboutus__bg::after{
+   position: absolute;
+   z-index: 5;
+   content: "";
+   bottom: 0;
+   width: 100%;
+   height: 10px;
+   background-color: #000;
 }
 .aboutus__body {
    position: relative;
@@ -746,6 +775,26 @@ body {
 .tokenomics {
    padding-top: 70px;
    padding-bottom: 70px;
+   position: relative;
+}
+.tokenomics__bg{
+   position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+   opacity: 0.8;
+   background-color: rgb(141, 4, 4);
+	left: 0;
+	object-fit: cover;
+}
+.tokenomics__bg::after{
+   position: absolute;
+   z-index: 5;
+   content: "";
+   bottom: 0;
+   width: 100%;
+   height: 10px;
+   background-color: #000;
 }
 .tokenomics__body {
    position: relative;
@@ -865,6 +914,7 @@ body {
 .rewards {
    padding-top: 70px;
    padding-bottom: 70px;
+   position: relative;
 }
 .rewards__body > *:not(:last-child){
    margin-bottom: 40px;
@@ -872,6 +922,25 @@ body {
 .rewards__body{
    position: relative;
    z-index: 2;
+}
+.rewards__bg{
+   position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+   opacity: 0.8;
+   background-color: rgb(250, 234, 161);
+	left: 0;
+	object-fit: cover;
+}
+.rewards__bg::after{
+   position: absolute;
+   z-index: 5;
+   content: "";
+   bottom: 0;
+   width: 100%;
+   height: 10px;
+   background-color: #000;
 }
 .rewards__title img{
    height: 8vw;
@@ -929,10 +998,10 @@ body {
       padding-bottom: 35px;
    }
    .rewards__title img{
-      height: 36px;
+      height: 32px;
    }
    .rewards__subtitle img{
-      height: 16px;
+      height: 14px;
    }
    .rewards__body > *:not(:last-child){
       margin-bottom: 25px;
@@ -946,6 +1015,29 @@ body {
 .roadmap {
    padding-top: 70px;
    padding-bottom: 70px;
+   position: relative;
+}
+.roadmap__bg{
+   position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+   opacity: 0.8;
+   background-color: rgb(225, 241, 240);
+	left: 0;
+	object-fit: cover;
+}
+.roadmap__bg::after{
+   position: absolute;
+   z-index: 5;
+   content: "";
+   bottom: 0;
+   width: 100%;
+   height: 10px;
+   background-color: #000;
+}
+.roadmap__body{
+   position: relative;
 }
 .roadmap__title {
    margin-bottom: 50px;
@@ -1025,6 +1117,26 @@ body {
 .remuneration {
    padding-top: 70px;
    padding-bottom: 70px;
+   position: relative;
+}
+.remuneration__bg{
+   position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+   opacity: 0.8;
+   background-color: rgb(45, 50, 65);
+	left: 0;
+	object-fit: cover;
+}
+.remuneration__bg::after{
+   position: absolute;
+   z-index: 5;
+   content: "";
+   bottom: 0;
+   width: 100%;
+   height: 10px;
+   background-color: #000;
 }
 .remuneration__body {
    position: relative;
@@ -1091,12 +1203,11 @@ body {
 }
 @media(max-width: 500px){
    .remuneration__title img{
-      height: 46px;
-      width: 350px;
+      height: 22px;
    }
    .remuneration__ftext img{
       height: 40px;
-      width: 350px;
+      width: 325px;
    }
    .remuneration {
       padding-top: 35px;
@@ -1117,9 +1228,15 @@ body {
 .presents {
    padding-top: 70px;
    padding-bottom: 70px;
+   position: relative;
 }
 .presents__title {
    margin-bottom: 40px;
+}
+.presents__bg{
+}
+.presents__body{
+   position: relative;
 }
 .presents__title img{
    height: 8vw;
@@ -1174,7 +1291,7 @@ body {
       height: 50px;
    }
    .presents__subtitle img{
-      height: 25px;
+      height: 20px;
    }
    .presents__bot img{
       height: 23px;
